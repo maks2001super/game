@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра з м'ячами та бомбами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ловіть м'ячі!</h1>
+    <div id="gameArea"></div>
+    <div id="score">Очки: 0</div>
+    <div id="time">Час: 30</div>
+    <div id="message"></div>
+    <button id="startBtn">Розпочати гру</button>
+
+    <!-- Додаємо повзунок для зміни гучності -->
+    <label for="volumeControl">Гучність:</label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.2">
+
+    <audio id="bgMusic" src="background.mp3" loop></audio>
+    <audio id="catchSound" src="catch.mp3"></audio>
+    <audio id="bombSound" src="bomb.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
